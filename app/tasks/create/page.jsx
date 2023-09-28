@@ -81,57 +81,59 @@ export default function CreateTask() {
           ></textarea>
         </div>
 
-        <div className="d-flex mb-3">
-          <div className="col-3 me-3">
-            <label htmlFor="status" className="form-label">
-              Status
-            </label>
-            <select
-              className="form-select"
-              aria-label="Default select example"
-              name="status"
-              onChange={handleChange}
-            >
-              <option>Select Status</option>
-              <option value="todo">Todo</option>
-              <option value="in_progress">Progress</option>
-              <option value="done">Done</option>
-            </select>
-          </div>
+        <div className="container mb-3">
+          <div className="row">
+            <div className="col-12 col-lg-3 me-3">
+              <label htmlFor="status" className="form-label">
+                Status
+              </label>
+              <select
+                className="form-select"
+                aria-label="Default select example"
+                name="status"
+                onChange={handleChange}
+              >
+                <option>Select Status</option>
+                <option value="todo">Todo</option>
+                <option value="in_progress">Progress</option>
+                <option value="done">Done</option>
+              </select>
+            </div>
 
-          <div className="col-3 me-3">
-            <label htmlFor="assigned_user" className="form-label">
-              Assigned user
-            </label>
-            <select
-              className="form-select"
-              aria-label="Default select example"
-              name="assigned_user"
-              onChange={handleChange}
-            >
-              <option>Select user</option>
-              {usersList.map((item) => {
-                return (
-                  <option key={item.id} value={item.id}>
-                    {`${item.username}: <${item.email}>`}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
+            <div className="col-12 col-lg-3 me-3">
+              <label htmlFor="assigned_user" className="form-label">
+                Assigned user
+              </label>
+              <select
+                className="form-select"
+                aria-label="Default select example"
+                name="assigned_user"
+                onChange={handleChange}
+              >
+                <option>Select user</option>
+                {usersList.map((item) => {
+                  return (
+                    <option key={item.id} value={item.id}>
+                      {`${item.username}: <${item.email}>`}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
 
-          <div className="col-2 me-3">
-            <label htmlFor="deadline" className="form-label">
-              Deadline
-            </label>
-            <input
-              type="date"
-              name="deadline"
-              id="deadline"
-              className="form-control"
-              onChange={handleChange}
-              min={new Date().toISOString().split("T")[0]}
-            />
+            <div className="col-12 col-lg-2 me-3">
+              <label htmlFor="deadline" className="form-label">
+                Deadline
+              </label>
+              <input
+                type="date"
+                name="deadline"
+                id="deadline"
+                className="form-control"
+                onChange={handleChange}
+                min={new Date().toISOString().split("T")[0]}
+              />
+            </div>
           </div>
         </div>
 
