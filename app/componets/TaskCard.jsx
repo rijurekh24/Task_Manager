@@ -10,7 +10,7 @@ export default function TaskCard({ props }) {
               <h5>{props.title} </h5>
               <span>
                 <i
-                  class="fa-regular fa-pen-to-square"
+                  className="fa-regular fa-pen-to-square"
                   style={{ color: "#7b8493" }}
                 ></i>
               </span>

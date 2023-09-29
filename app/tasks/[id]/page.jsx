@@ -69,7 +69,14 @@ export default function ViewUpdateDeletePage({ params }) {
   };
 
   const handleDelete = (e) => {
-    //  remove(ref(db, `tasks/${params.id}`));
+    e.preventDefault();
+    remove(ref(db, `tasks/${params.id}`))
+      .then(() => {
+        swal("Deleted Successfully!", "", "success");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
