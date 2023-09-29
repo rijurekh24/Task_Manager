@@ -103,9 +103,9 @@ export default function ViewUpdateDeletePage({ params }) {
           ></textarea>
         </div>
 
-        <div className="container mb-3">
+        <div className="mb-3">
           <div className="row">
-            <div className="col-lg-3 col-12 me-3">
+            <div className="col-lg-3 col-12 me-3 mb-3">
               <label htmlFor="status" className="form-label">
                 Status
               </label>
@@ -123,7 +123,7 @@ export default function ViewUpdateDeletePage({ params }) {
               </select>
             </div>
 
-            <div className="col-lg-3 col-12 me-3">
+            <div className="col-lg-3 col-12 me-3 mb-3">
               <label htmlFor="assigned_user" className="form-label">
                 Assigned user
               </label>

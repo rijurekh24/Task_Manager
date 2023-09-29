@@ -27,7 +27,7 @@ export default function Register() {
 
   return (
     <div
-      className="d-flex align-items-center justify-content-center form"
+      className="d-flex align-items-center justify-content-center login-form"
       style={{ height: "80vh" }}
     >
       <form onSubmit={handleSubmit}>

@@ -17,9 +17,9 @@ select:focus,
 }
 
 form {
-  border: 1px solid #ccc;
+  border: 1px solid #ccc !important;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   box-shadow: 1px 1px 5px black;
   background-color: #eeeeee2a;
 }

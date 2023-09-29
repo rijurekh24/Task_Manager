@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header></Header>
         <div className="container mt-3">{children}</div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" />
       </body>
     </html>
   );

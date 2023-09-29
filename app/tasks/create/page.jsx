@@ -81,9 +81,9 @@ export default function CreateTask() {
           ></textarea>
         </div>
 
-        <div className="container mb-3">
+        <div className="mb-3">
           <div className="row">
-            <div className="col-12 col-lg-3 me-3">
+            <div className="col-12 col-lg-3 me-3 mb-3">
               <label htmlFor="status" className="form-label">
                 Status
               </label>
@@ -100,7 +100,7 @@ export default function CreateTask() {
               </select>
             </div>
 
-            <div className="col-12 col-lg-3 me-3">
+            <div className="col-12 col-lg-3 me-3 mb-3">
               <label htmlFor="assigned_user" className="form-label">
                 Assigned user
               </label>
@@ -121,7 +121,7 @@ export default function CreateTask() {
               </select>
             </div>
 
-            <div className="col-12 col-lg-2 me-3">
+            <div className="col-12 col-lg-2 me-3 mb-3">
               <label htmlFor="deadline" className="form-label">
                 Deadline
               </label>

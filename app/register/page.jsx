@@ -4,8 +4,11 @@ import "./register.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "@/firebase";
 import { ref, set } from "firebase/database";
+import { useRouter } from "next/navigation";
 
 export default function Register() {
+  const router = useRouter();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -21,6 +24,7 @@ export default function Register() {
           email: email.value,
           id: user.uid,
         });
+        router.push("/");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -30,7 +34,7 @@ export default function Register() {
 
   return (
     <div
-      className="d-flex align-items-center justify-content-center"
+      className="d-flex align-items-center justify-content-center register-form"
       style={{ height: "80vh" }}
     >
       <form onSubmit={handleSubmit}>
