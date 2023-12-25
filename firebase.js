@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAcx_9GSBaqQICH85Ll_T66AkcCQJ0EKQo",
-  authDomain: "task-management-app-33c94.firebaseapp.com",
-  projectId: "task-management-app-33c94",
-  storageBucket: "task-management-app-33c94.appspot.com",
-  messagingSenderId: "534252496347",
-  appId: "1:534252496347:web:e84c9089bc92b12ea733fe",
+  apiKey: "AIzaSyBhFLlPbp4erKTqtAKgmkIiMMFGv-RDSFA",
+  authDomain: "task-management-app-23b99.firebaseapp.com",
+  projectId: "task-management-app-23b99",
+  storageBucket: "task-management-app-23b99.appspot.com",
+  messagingSenderId: "76077071536",
+  appId: "1:76077071536:web:5099efea0ee1535dfdcf75",
+  measurementId: "G-H6LJDE0ZW8",
 };
 
 const app = initializeApp(firebaseConfig);
